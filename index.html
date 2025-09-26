@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À Propos - Mon Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
+
+  <!-- CSS personnalisé -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="ri-terminal-box-line text-white"></i> _Francky</a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="Projet.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#techno">Veille techno.</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- À propos -->
+  <section id="about" class="py-5 bg-light" style="margin-top: 75px;">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Photo à gauche -->
+        <div class="col-md-4 text-start mb-4 mb-md-0">
+          <div class="profile-image-container">
+            <img src="exemple.jpg" alt="Photo de profil" class="img-fluid rounded-circle shadow-lg profile-image" 
+                 style="max-width: 250px;" 
+                 
+                 onerror="this.src='https://via.placeholder.com/250x250/667eea/ffffff?text=Francky'; this.alt='Photo de profil par défaut';">
+           <h4 class="mt-3 fw-bold">RAFALIMANANTSOA Francky Anthony Marcel</h4>
+           <p class="text-muted"><i class="ri-ball-pen-line"></i>Étudiant en BTS SIO</p>
+
+                </div>
+        </div>
+        
+        <!-- Texte à droite -->
+        <div class="col-md-8">
+          <h2 class="fw-bold mb-3">À propos de moi</h2>
+          <p class="lead">
+            Bonjour, je m'appelle <strong>Francky</strong> et je suis étudiant en 
+            <strong>BTS SIO</strong> à la <em>MCCI Business School</em>, spécialisé en développement web.  
+            Passionné par les nouvelles technologies, j'ai conçu ce portfolio pour partager mes projets 
+            comme <strong>SUPERCAR</strong> et bien d'autres.
+          </p>
+          <p>
+            Mon objectif : utiliser mes compétences pour créer des solutions innovantes, performantes et accessibles.
+          </p>
+
+          <!-- Boutons -->
+          <div class="mt-3">
+            <a href="Projet.html" class="btn btn-modern btn-modern-primary btn-sm">
+              <i class="ri-rocket-line"></i> Voir mes projets
+            </a>
+            <a href="CV.pdf" class="btn btn-modern btn-modern-success btn-sm">
+              <i class="ri-file-download-line"></i> Télécharger mon CV
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <p>&copy; 2025 Mon Portfolio | Développé avec Bootstrap</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    // Animation de la navbar au scroll
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 100) {
+        navbar.style.background = 'rgba(17, 24, 39, 0.98)';
+      } else {
+        navbar.style.background = 'rgba(17, 24, 39, 0.95)';
+      }
+    });
+  </script>
+</body>
+</html>
