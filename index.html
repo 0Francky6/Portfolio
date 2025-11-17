@@ -3,58 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À Propos - Mon Portfolio</title>
+  <title>Francky Portfolio - Développeur Web</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap + Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"/>
 
-  <!-- CSS personnalisé -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><i class="ri-terminal-box-line text-white"></i> _Francky</a>
-      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand" href="#about"><i class="ri-terminal-box-line"></i> _Francky</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">À propos</a></li>
-          <li class="nav-item"><a class="nav-link" href="Projet.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
           <li class="nav-item"><a class="nav-link" href="#techno">Veille techno.</a></li>
-          <li class="nav-item"><a class="nav-link" href="skills.html">Compétences</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- À propos -->
+  <!-- À PROPOS -->
   <section id="about" class="py-5 bg-light" style="margin-top: 75px;">
     <div class="container">
       <div class="row align-items-center">
-        
-        <!-- Photo à gauche -->
-        <div class="col-md-4 text-start mb-4 mb-md-0">
-          <div class="profile-image-container">
-            <img src="exemple.jpg" alt="Photo de profil" class="img-fluid rounded-circle shadow-lg profile-image" 
-                 style="max-width: 250px;" 
-                 
-                 onerror="this.src='https://via.placeholder.com/250x250/667eea/ffffff?text=Francky'; this.alt='Photo de profil par défaut';">
-           <h4 class="mt-3 fw-bold">RAFALIMANANTSOA Francky Anthony Marcel</h4>
-           <p class="text-muted"><i class="ri-ball-pen-line"></i>Étudiant en BTS SIO</p>
-
-                </div>
+        <div class="col-md-4 text-center mb-4 mb-md-0 fade-in-left">
+          <img src="image/photo.jpg" alt="Francky" class="img-fluid rounded-circle shadow-lg profile-image"
+               onerror="this.src='https://via.placeholder.com/250x250/667eea/ffffff?text=Francky';">
+          <h4 class="mt-3 fw-bold">RAFALIMANANTSOA Francky Anthony Marcel</h4>
+          <p class="text-muted"><i class="ri-ball-pen-line"></i> Étudiant en BTS SIO</p>
         </div>
-        
-        <!-- Texte à droite -->
-        <div class="col-md-8">
+        <div class="col-md-8 fade-in-right">
           <h2 class="fw-bold mb-3">À propos de moi</h2>
           <p class="lead">
             Bonjour, je m'appelle <strong>Francky</strong> et je suis étudiant en 
@@ -62,43 +54,336 @@
             Passionné par les nouvelles technologies, j'ai conçu ce portfolio pour partager mes projets 
             comme <strong>SUPERCAR</strong> et bien d'autres.
           </p>
-          <p>
-            Mon objectif : utiliser mes compétences pour créer des solutions innovantes, performantes et accessibles.
-          </p>
-
-          <!-- Boutons -->
+          <p>Mon objectif : créer des solutions innovantes, performantes et accessibles.</p>
           <div class="mt-3">
-            <a href="Projet.html" class="btn btn-modern btn-modern-primary btn-sm">
-              <i class="ri-rocket-line"></i> Voir mes projets
-            </a>
-            <a href="CV.pdf" class="btn btn-modern btn-modern-success btn-sm">
-              <i class="ri-file-download-line"></i> Télécharger mon CV
+            <a href="docs/CV.pdf" class="btn btn-modern-success btn-sm" download>
+              <i class="ri-file-download-line"></i> Télécharger CV
             </a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+   <!-- Parcours Scolaire intégré -->
+      <div class="row mt-5">
+        <div class="col-12">
+          <div class="section-header text-center mb-5 fade-in-up">
+            <h2 class="section-title">Parcours Académiques</h2>
+            <p class="section-subtitle">Découvrez les étapes clés de mon parcours académique</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item fade-in-left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>BTS en Service Informatiques aux organisations</h3>
+                <span class="timeline-date">2024 - Présent</span>
+                <p>Mcci Business School</p>
+              </div>
+            </div>
+          
+            <div class="timeline-item fade-in-left">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>L1 et L2 en BTP </h3>
+                <span class="timeline-date">2021 - 2023</span>
+                <p>CNAM Madagascar</p>
+              </div>
+            </div>
+           
+              <div class="timeline-item fade-in-right">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h3>Baccalauréat Général Série D</h3>
+                <span class="timeline-date">2020 - 2021</span>
+                <p>Sainte Famille Mahamasina</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fade-in-up">Mes Projets</h2>
+      <div class="row">
+
+        <!-- Formation -->
+        <div class="col-md-6">
+          <h3 class="text-primary mb-4 fade-in-left">Formation</h3>
+
+          <div class="card mb-4 shadow project-card fade-in-left">
+            <div class="card-body">
+              <h5 class="card-title">
+                Projet Supercar 
+                <span class="badge bg-info text-dark ms-2">HTML/CSS</span>
+                <span class="badge bg-info text-light ms-2">BOOTSTRAP</span>
+                <span class="badge bg-warning text-dark ms-1">PHP</span>
+                <span class="badge bg-danger text-light ms-1">MySQL</span>
+              </h5>
+              <p class="card-text">
+                Site web de présentation de voitures de luxe avec base de données.
+              </p>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="http://franckysupercar.alwaysdata.net/supercar/client" class="btn btn-modern btn-modern-success btn-sm"><i class="ri-global-line"></i> Client</a>
+                <a href="http://franckysupercar.alwaysdata.net/supercar/admin" class="btn btn-modern btn-modern-success btn-sm"><i class="ri-user-settings-line"></i> Admin</a>
+                <a href="https://www.canva.com/design/DAG3P-0Jvpg/SY0zX_qDaiGlJWomqV3nMw/view?utm_content=DAG3P-0Jvpg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6834ddd3d2" class="btn btn-modern btn-modern-success btn-sm"><i class="ri-file-text-line"></i> Rapport</a>
+                <a href="https://www.canva.com/design/DAGmyt3XQPk/Gbdk4rAgU4hf-tkLjSB0Mw/view" target="_blank" class="btn btn-modern btn-modern-success btn-sm">
+                  <i class="ri-slideshow-line"></i> Présentation
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-4 shadow project-card fade-in-left">
+            <div class="card-body">
+              <h5 class="card-title">
+                Projet VSM 
+                <span class="badge bg-warning text-dark ms-2">JAVA</span>
+                <span class="badge bg-danger text-light ms-1">PostgreSQL</span>
+              </h5>
+              <p class="card-text">
+                Application CRUD pour la gestion complète des données.
+              </p>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="#" class="btn btn-modern btn-modern-success btn-sm"><i class="ri-global-line"></i> Demo</a>
+                <a href="#" class="btn btn-modern btn-modern-success btn-sm"><i class="ri-file-text-line"></i> Rapport</a>
+                <a href="#" class="btn btn-modern btn-modern-success btn-sm"><i class="ri-slideshow-line"></i> Présentation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entreprise -->
+        <div class="col-md-6">
+          <h3 class="text-success mb-4 fade-in-right">Entreprise</h3>
+
+          <div class="card mb-4 shadow project-card fade-in-right">
+            <div class="card-body">
+              <h5 class="card-title">
+                Projet Entreprise 1 
+                <span class="badge bg-info text-dark ms-2">HTML/CSS</span>
+                <span class="badge bg-info text-light ms-2">BOOTSTRAP</span>
+                <span class="badge bg-warning text-dark ms-1">PHP</span>
+                <span class="badge bg-danger text-light ms-1">MySQL</span>
+              </h5>
+              
+              <p class="card-text">
+                Système d’envoi automatique des e-mails pour tous les jours fériés aux employés de Sedeco.              </p>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="docs/Attestation de stage_Francky.pdf" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-file-text-line"></i> Attestation</a>
+                <a href="https://www.canva.com/design/DAGz4AzApJ0/0W1woN4W2GCLmOYapyLmFw/view?utm_content=DAGz4AzApJ0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbac0ab3f3d" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-article-line"></i> Rapport</a>
+                <a href="#" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-bar-chart-line"></i> Bilan</a>
+                <a href="https://www.canva.com/design/DAGzPbu306k/IyazMvcsOOC7vVvsRk4hew/view?utm_content=DAGzPbu306k&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h162c2c1942" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-slideshow-line"></i> Présentation</a>
+              <!-- <a href="#" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-play-line"></i> Voir</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-4 shadow project-card fade-in-right">
+            <div class="card-body">
+              <h5 class="card-title">
+                Projet Entreprise 2 
+                <span class="badge bg-secondary text-light ms-2">SQL</span>
+              </h5>
+              <p class="card-text">
+                
+              </p>
+              <div class="d-flex gap-2 flex-wrap">
+                <a href="#" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-file-text-line"></i> Attestation</a>
+                <a href="#" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-article-line"></i> Rapport</a>
+                <a href="#" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-bar-chart-line"></i> Bilan</a>
+                <a href="#" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-slideshow-line"></i> Présentation</a>
+              <!--  <a href="#" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-play-line"></i> Voir</a>  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- VEILLE TECHNOLOGIQUE -->
+ <section id="techno" class="veille-section py-5">
+  <div class="container">
+    
+    <div class="section-header text-center mb-5 fade-in-up">
+      <span class="section-tag">Veille Technologique</span>
+      <h2 class="section-title">Thème : L'évolution du langage PHP et ses frameworks modernes</h2>
+      <p class="section-subtitle">
+        Suivi des dernières tendances et mises à jour de PHP grâce à des outils de veille.
+      </p>
+    </div>
+
+    <div class="veille-content">
+
+      <div class="veille-block fade-in-right">
+        <h3><i class="ri-lightbulb-flash-line"></i> Objectifs</h3>
+        <ul>
+          <li>Suivre les <strong>nouvelles versions</strong> de PHP et leurs fonctionnalités majeures.</li>
+          <li>Identifier les <strong>améliorations de performance et de sécurité</strong>.</li>
+          <li>Explorer les <strong>nouveaux frameworks et tendances</strong> de l'écosystème PHP.</li>
+        </ul>
+      </div>
+
+      <!-- 🔥 Section Outils -->
+      <div class="veille-tools ">
+
+        <div class="alert-item">
+          <h2>Google Alertes</h2>
+          <img src="image/alerte.jpeg" alt="">
+          <a href="#" class="alert-btn">Voir Plus</a>
+        </div>
+
+        <div class="alert-item">
+          <h2>Flux RSS</h2>
+          <img src="image/rss.webp" alt="">
+          <a href="#" class="alert-btn">Voir Plus</a>
+        </div>
+
+        <div class="alert-item">
+          <h2>Feedly</h2>
+          <img src="image/feedly.jpg" alt="">
+          <a href="#" class="alert-btn">Voir Plus</a>
+        </div>
+
+      </div>
+
+      <div class="veille-block fade-in-up">
+        <h3><i class="ri-rocket-line"></i> Bénéfices</h3>
+        <ul>
+          <li>Maintenir mes compétences à jour.</li>
+          <li>Adapter mes projets aux évolutions de PHP.</li>
+          <li>Anticiper les tendances du développement web.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- COMPÉTENCES -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header text-center mb-5 fade-in-up">
+        <span class="section-tag">Mes expertises</span>
+        <h2 class="section-title">Compétences Techniques</h2>
+        <p class="section-subtitle">
+          Technologies et outils que je maîtrise pour créer des solutions web innovantes
+        </p>
+      </div>
+
+      <div class="skills-categories">
+        <!-- Front-end -->
+        <div class="category-section fade-in-left">
+          <div class="category-card">
+            <div class="category-icon"><i class="ri-palette-line"></i></div>
+            <h3>Front-end</h3>
+            <p>Interface utilisateur et expérience client</p>
+            <div class="technologies-list">
+              <div class="tech-item"><div class="tech-icon html-icon"><i class="ri-code-s-slash-line"></i></div><span>HTML5</span></div>
+              <div class="tech-item"><div class="tech-icon css-icon"><i class="ri-css3-line"></i></div><span>CSS3</span></div>
+              <div class="tech-item"><div class="tech-icon js-icon"><i class="ri-javascript-line"></i></div><span>JavaScript</span></div>
+              <div class="tech-item"><div class="tech-icon bootstrap-icon"><i class="ri-bootstrap-line"></i></div><span>Bootstrap</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back-end -->
+        <div class="category-section fade-in-up">
+          <div class="category-card">
+            <div class="category-icon"><i class="ri-code-s-slash-fill"></i></div>
+            <h3>Back-end</h3>
+            <p>Logique métier et architecture serveur</p>
+            <div class="technologies-list">
+              <div class="tech-item"><div class="tech-icon php-icon"><i class="ri-code-line"></i></div><span>PHP</span></div>
+              <div class="tech-item"><div class="tech-icon java-icon"><i class="ri-cup-line"></i></div><span>Java</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Base de données -->
+        <div class="category-section fade-in-right">
+          <div class="category-card">
+            <div class="category-icon"><i class="ri-database-2-line"></i></div>
+            <h3>Base de Données</h3>
+            <p>Gestion et optimisation des données</p>
+            <div class="technologies-list">
+              <div class="tech-item"><div class="tech-icon mysql-icon"><i class="ri-database-line"></i></div><span>MySQL</span></div>
+              <div class="tech-item"><div class="tech-icon postgresql-icon"><i class="ri-database-2-line"></i></div><span>PostgreSQL</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-header mb-5 text-center fade-in-up">
+          <h2 class="contact-title">Me Contacter</h2>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info fade-in-left">
+            <div class="info-section">
+              <h3><i class="ri-phone-line"></i> Téléphone</h3>
+              <p>+230 5935 3663</p>
+            </div>
+            <div class="info-section">
+              <h3><i class="ri-mail-send-line"></i> Mail</h3>
+              <p><a href="mailto:franckydev@gmail.com">franckymarcel06@gmail.com</a></p>
+            </div>
+            <div class="info-section">
+              <h3><i class="ri-github-fill"></i> GitHub</h3>
+              <p><a href="https://github.com/franckydev" target="_blank">github.com/franckydev</a></p>
+            </div>
+          </div>
+
+          <div class="contact-form fade-in-right">
+            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+              <input type="hidden" name="access_key" value="e1d6d64d-4a1a-40f8-9206-5d4c48dfc823">
+              <div class="form-row">
+                <div class="form-group field">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Votre email" required>
+                  <div class="error-txt">Mail invalide</div>
+                </div>
+                <div class="form-group field">
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom" required>
+                  <div class="error-txt">Veuillez remplir ce champ</div>
+                </div>
+              </div>
+              <div class="form-group field">
+                <input type="text" id="sujet" name="sujet" class="form-control" placeholder="Sujet" required>
+                <div class="error-txt">Veuillez remplir ce champ</div>
+              </div>
+              <div class="form-group field">
+                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Votre message" required></textarea>
+                <div class="error-txt">Veuillez remplir ce champ</div>
+              </div>
+              <button type="submit" class="btn-submit">Envoyer le message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="text-center py-3">
-    <p>&copy; 2025 Mon Portfolio | Développé avec Bootstrap</p>
+    <p>&copy; 2025 Francky Portfolio | Développé avec passion</p>
   </footer>
 
-  <!-- Bootstrap JS -->
+  <!-- Bootstrap JS + JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  
-  <script>
-    // Animation de la navbar au scroll
-    window.addEventListener('scroll', () => {
-      const navbar = document.querySelector('.navbar');
-      if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(17, 24, 39, 0.98)';
-      } else {
-        navbar.style.background = 'rgba(17, 24, 39, 0.95)';
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
