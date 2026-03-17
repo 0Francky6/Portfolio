@@ -29,7 +29,15 @@
           <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
           <li class="nav-item"><a class="nav-link" href="#techno">Veille techno.</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+          <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+    Compétences
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#skills">Compétences techniques</a></li>
+    <li><a class="dropdown-item" href="#skills-glpi">GLPI / Gestion de parc</a></li>
+  </ul>
+</li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -135,6 +143,9 @@
                 <a href="https://www.canva.com/design/DAGmyt3XQPk/Gbdk4rAgU4hf-tkLjSB0Mw/view" target="_blank" class="btn btn-modern btn-modern-success btn-sm">
                   <i class="ri-slideshow-line"></i> Présentation
                 </a>
+                <a href="docs/Francky_Fiche_Descriptive_RP1.pdf" class="btn btn-modern btn-modern-success btn-sm">
+                  <i class="ri-file-text-line"></i> Fiche Descriptive
+                </a>
               </div>
             </div>
           </div>
@@ -142,7 +153,7 @@
           <div class="card mb-4 shadow project-card fade-in-left">
             <div class="card-body">
               <h5 class="card-title">
-                Projet VSM 
+                Projet VMS 
                 <span class="badge bg-warning text-dark ms-2">JAVA</span>
                 <span class="badge bg-danger text-light ms-1">PostgreSQL</span>
               </h5>
@@ -167,6 +178,7 @@
               <h5 class="card-title">
                 Projet Entreprise 1 
                 <span class="badge bg-info text-dark ms-2">HTML/CSS</span>
+                <span class="badge bg-warning text-dark ms-2">JavaScript</span>
                 <span class="badge bg-info text-light ms-2">BOOTSTRAP</span>
                 <span class="badge bg-warning text-dark ms-1">PHP</span>
                 <span class="badge bg-danger text-light ms-1">MySQL</span>
@@ -188,16 +200,17 @@
             <div class="card-body">
               <h5 class="card-title">
                 Projet Entreprise 2 
-                <span class="badge bg-secondary text-light ms-2">SQL</span>
+                <span class="badge bg-secondary text-light ms-2">JAVA</span>
+                <span class="badge bg-danger text-light ms-1">PostgreSQL</span>
               </h5>
               <p class="card-text">
-                
+                Création d'un gestionnaire de stock pour la Au Feu de Bois, permettant de suivre les niveaux de stock, les entrées et sorties de produits, et de générer des rapports d'inventaire.
               </p>
               <div class="d-flex gap-2 flex-wrap">
                 <a href="#" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-file-text-line"></i> Attestation</a>
                 <a href="#" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-article-line"></i> Rapport</a>
-                <a href="#" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-bar-chart-line"></i> Bilan</a>
-                <a href="#" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-slideshow-line"></i> Présentation</a>
+                <a href="docs/bilan_francky.pdf" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-file-text-line"></i> Bilan</a>
+                <a href="https://www.canva.com/design/DAHELaYaJrk/0UYidSq99fwmdQ5dCOyOGA/edit?utm_content=DAHELaYaJrk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-slideshow-line"></i> Présentation</a>
               <!--  <a href="#" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-play-line"></i> Voir</a>  -->
               </div>
             </div>
@@ -276,7 +289,6 @@
   <section id="skills" class="skills-section">
     <div class="container">
       <div class="section-header text-center mb-5 fade-in-up">
-        <span class="section-tag">Mes expertises</span>
         <h2 class="section-title">Compétences Techniques</h2>
         <p class="section-subtitle">
           Technologies et outils que je maîtrise pour créer des solutions web innovantes
@@ -327,6 +339,18 @@
       </div>
     </div>
   </section>
+
+      <section id="skills-glpi" class="skills-section">
+        <div class="container">
+          <div class="section-header text-center mb-5 fade-in-up">
+            <span class="section-tag">GLPI / Gestion de parc</span>
+            <h2 class="section-title">Compétences en Gestion de Parc</h2>
+            <p class="section-subtitle">
+              Expérience dans la gestion et l'optimisation des ressources informatiques
+            </p>
+          </div>
+        </div>
+      </section>
 
   <!-- CONTACT -->
   <section id="contact" class="contact-section">
