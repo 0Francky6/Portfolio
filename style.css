@@ -543,6 +543,96 @@ body {
 .mysql-icon { background: linear-gradient(135deg, #4479A1, #00758F); }
 .postgresql-icon { background: linear-gradient(135deg, #336791, #4A90A4); }
 
+/* ===== SECTION COMPÉTENCES GLPI ===== */
+.glpi-def {
+  background: white;
+  border-left: 4px solid #4F46E5;
+  border-radius: 0 12px 12px 0;
+  padding: 18px 24px;
+  max-width: 820px;
+  margin: 0 auto 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.7;
+}
+.glpi-def strong { color: #4F46E5; }
+
+.dash-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .dash-grid-4 { grid-template-columns: 1fr; }
+}
+.dash-card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px 22px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  border: 1px solid rgba(79,70,229,0.08);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dash-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #4F46E5, #22C55E);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dash-card:hover { transform: translateY(-6px); box-shadow: 0 16px 35px rgba(0,0,0,0.13); }
+.dash-card:hover::before { opacity: 1; }
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.card-icon-wrap {
+  width: 46px; height: 46px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  color: white;
+  background: linear-gradient(135deg, #4F46E5, #22C55E);
+}
+
+.card-num {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #4F46E5;
+  background: rgba(79,70,229,0.08);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.card-name { font-size: 1rem; font-weight: 600; color: #1a1a1a; margin: 0 0 10px; }
+
+.card-desc {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f5;
+}
+
+@media (max-width: 768px) {
+  .dash-grid, .dash-grid-2 { grid-template-columns: 1fr; max-width: 100%; }
+}
+
 /* ===== SECTION CONTACT ===== */
 .contact-section {
   min-height: 100vh;
