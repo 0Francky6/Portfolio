@@ -34,8 +34,8 @@
     Compétences
   </a>
         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#skills-glpi">Gestion de parc</a></li>
           <li><a class="dropdown-item" href="#skills">Compétences techniques</a></li>
-          <li><a class="dropdown-item" href="#skills-glpi">GLPI / Gestion de parc</a></li>
        </ul>
 </li>
       <a class="nav-link" href="docs/TableauSynthese-02542605405-Francky.pdf" > Tableau de synthèse</a>
@@ -54,19 +54,18 @@
           <img src="image/photo.jpg" alt="Francky" class="img-fluid rounded-circle shadow-lg profile-image"
                onerror="this.src='https://via.placeholder.com/250x250/667eea/ffffff?text=Francky';">
           <h4 class="mt-3 fw-bold">RAFALIMANANTSOA Francky Anthony Marcel</h4>
-          <p class="text-muted"><i class="ri-ball-pen-line"></i> Étudiant en BTS SIO</p>
+       <!--   <p class="text-muted"><i class="ri-ball-pen-line"></i> Étudiant en BTS SIO</p>  -->
         </div>
         <div class="col-md-8 fade-in-right">
           <h2 class="fw-bold mb-3">À propos de moi</h2>
           <p class="lead">
             Bonjour, je m'appelle <strong>Francky</strong> et je suis étudiant en 
-            <strong>BTS SIO</strong> à la <em>MCCI Business School</em>, spécialisé en développement web.  
-            Passionné par les nouvelles technologies, j'ai conçu ce portfolio pour partager mes projets 
-            comme <strong>SUPERCAR</strong> et bien d'autres.
+            <strong>Bachelor</strong> à  <em>Ingetis </em>, spécialisé en développement Informatique.  
+            Passionné par les nouvelles technologies, j'ai conçu ce portfolio pour partager mes projets.
           </p>
-          <p>Mon objectif : créer des solutions innovantes, performantes et accessibles.</p>
+      <!--    <p>Mon objectif : créer des solutions innovantes, performantes et accessibles.</p> -->
           <div class="mt-3">
-            <a href="docs/CV.pdf" class="btn btn-modern-success btn-sm" download>
+            <a href="docs/Francky_vitae.pdf" class="btn btn-modern-success btn-sm" download>
               <i class="ri-file-download-line"></i> Télécharger CV
             </a>
           </div>
@@ -75,46 +74,78 @@
     </div>
   </section>
 
-   <!-- Parcours Scolaire intégré -->
-      <div class="row mt-5">
-        <div class="col-12">
-          <div class="section-header text-center mb-5 fade-in-up">
-            <h2 class="section-title">Parcours Académiques</h2>
-            <p class="section-subtitle">Découvrez les étapes clés de mon parcours académique</p>
+  <!-- Parcours Académique (affichage horizontal) -->
+  <section id="parcours" class="py-5 bg-light">
+    <div class="container">
+      <div class="section-header text-center mb-5 fade-in-up">
+        <h2 class="section-title">Parcours Académiques</h2>
+        <p class="section-subtitle">Découvrez les étapes clés de mon parcours académique</p>
+      </div>
+      <div class="row g-4 parcours-row">
+        <div class="col-md-4 fade-in-up">
+          <div class="parcours-card h-100">
+            <span class="parcours-date">2024 - 2026</span>
+            <h3>BTS en Services Informatiques aux Organisations</h3>
+            <p>Mcci Business School</p>
           </div>
-          <div class="timeline">
-            <div class="timeline-item fade-in-left">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <h3>BTS en Service Informatiques aux organisations</h3>
-                <span class="timeline-date">2024 - Présent</span>
-                <p>Mcci Business School</p>
-              </div>
-            </div>
-          
-            <div class="timeline-item fade-in-left">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <h3>L1 et L2 en BTP </h3>
-                <span class="timeline-date">2021 - 2023</span>
-                <p>CNAM Madagascar</p>
-              </div>
-            </div>
-           
-              <div class="timeline-item fade-in-right">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
-                <h3>Baccalauréat Général Série D</h3>
-                <span class="timeline-date">2020 - 2021</span>
-                <p>Sainte Famille Mahamasina</p>
-              </div>
-            </div>
-            
+        </div>
+        <div class="col-md-4 fade-in-up">
+          <div class="parcours-card h-100">
+            <span class="parcours-date">2021 - 2023</span>
+            <h3>L1 et L2 en BTP</h3>
+            <p>CNAM Madagascar</p>
+          </div>
+        </div>
+        <div class="col-md-4 fade-in-up">
+          <div class="parcours-card h-100">
+            <span class="parcours-date">2020 - 2021</span>
+            <h3>Baccalauréat Général Série D</h3>
+            <p>Sainte Famille Mahamasina</p>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <style>
+    .parcours-row { position: relative; }
+    .parcours-card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 14px;
+      padding: 1.75rem 1.5rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      text-align: center;
+    }
+    .parcours-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+    }
+    .parcours-date {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: #fff;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      padding: 0.3rem 0.9rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    .parcours-card h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .parcours-card p {
+      color: #6c757d;
+      margin-bottom: 0;
+    }
+    @media (max-width: 767px) {
+      .parcours-card { text-align: left; }
+    }
+  </style>
 
   <!-- PROJETS -->
   <section id="projects" class="py-5">
@@ -199,7 +230,7 @@
               </h5>
               
               <p class="card-text">
-                Système d’envoi automatique des e-mails pour tous les jours fériés aux employés de Sedeco.              </p>
+                Système d'envoi automatique des e-mails pour tous les jours fériés aux employés de Sedeco.              </p>
               <div class="d-flex gap-2 flex-wrap">
                 <a href="docs/Attestation de stage_Francky.pdf" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-file-text-line"></i> Attestation</a>
                 <a href="https://www.canva.com/design/DAGz4AzApJ0/0W1woN4W2GCLmOYapyLmFw/view?utm_content=DAGz4AzApJ0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbac0ab3f3d" class="btn btn-modern btn-modern-primary btn-sm"><i class="ri-article-line"></i> Rapport</a>
@@ -264,14 +295,7 @@
           <p class="tool-description">Un service gratuit qui envoie des notifications par e-mail dès que de nouveaux contenus concernant un sujet apparaissent sur le web.</p>
           <a href="https://mail.google.com/mail/u/1/#inbox" class="alert-btn">Voir Plus</a>
         </div>
- <!-- 
-        <div class="alert-item">
-          <h2>Flux RSS</h2>
-          <img src="image/rss.webp" alt="Flux RSS">
-          <p class="tool-description">Agrégation de sources : Forbes Tech, JDN, TechCrunch, Hacker News</p>
-          <a href="#" class="alert-btn">Voir Plus</a>
-        </div>
--->
+
         <div class="alert-item">
           <h2>Feedly</h2>
           <img src="image/feedly.jpg" alt="Feedly">
@@ -295,7 +319,57 @@
   </div>
 </section>
 
-  <!-- COMPÉTENCES -->
+  
+<section id="skills-glpi" class="skills-section">
+  <div class="container">
+    <div class="section-header text-center mb-5 fade-in-up">
+      <span class="section-tag">GLPI / Gestion de parc</span>
+      <h2 class="section-title">Compétences en gestion de parc</h2>
+      <p class="section-subtitle">Expérience dans la gestion et l'optimisation des ressources informatiques</p>
+    </div>
+
+    <div class="glpi-def">
+      <strong>Définition —</strong> GLPI (Gestionnaire Libre de Parc Informatique) est une application open-source de gestion des services informatiques qui permet aux organisations de gérer efficacement leurs ressources informatiques.
+    </div>
+
+    <div class="dash-grid-4">
+      <div class="dash-card">
+        <div class="card-top">
+          <div class="card-icon-wrap"><i class="ri-hard-drive-2-fill"></i></div>
+          <span class="card-num">01</span>
+        </div>
+        <p class="card-name">Installation & configuration</p>
+        <p class="card-desc">Mise en place du GLPI, configuration initiale et paramétrage de la base de données.</p>
+      </div>
+      <div class="dash-card">
+        <div class="card-top">
+          <div class="card-icon-wrap"><i class="ri-ticket-2-fill"></i></div>
+          <span class="card-num">02</span>
+        </div>
+        <p class="card-name">Gestion des tickets</p>
+        <p class="card-desc">Création, suivi et résolution des incidents informatiques.</p>
+      </div>
+      <div class="dash-card">
+        <div class="card-top">
+          <div class="card-icon-wrap"><i class="ri-mac-line"></i></div>
+          <span class="card-num">03</span>
+        </div>
+        <p class="card-name">Gestion du parc</p>
+        <p class="card-desc">Inventaire complet du matériel et des logiciels de l'entreprise.</p>
+      </div>
+      <div class="dash-card">
+        <div class="card-top">
+          <div class="card-icon-wrap"><i class="ri-radar-line"></i></div>
+          <span class="card-num">04</span>
+        </div>
+        <p class="card-name">Glpi Inventory</p>
+        <p class="card-desc">Collecte automatique des données matérielles et logicielles via un agent déployé sur chaque machine du parc.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPÉTENCES -->
   <section id="skills" class="skills-section">
     <div class="container">
       <div class="section-header text-center mb-5 fade-in-up">
@@ -349,54 +423,7 @@
       </div>
     </div>
   </section>
-<section id="skills-glpi" class="skills-section">
-  <div class="container">
-    <div class="section-header text-center mb-5 fade-in-up">
-      <span class="section-tag">GLPI / Gestion de parc</span>
-      <h2 class="section-title">Compétences en gestion de parc</h2>
-      <p class="section-subtitle">Expérience dans la gestion et l'optimisation des ressources informatiques</p>
-    </div>
 
-    <div class="glpi-def">
-      <strong>Définition —</strong> GLPI (Gestionnaire Libre de Parc Informatique) est une application open-source de gestion des services informatiques qui permet aux organisations de gérer efficacement leurs ressources informatiques.
-    </div>
-
-    <div class="dash-grid-4">
-      <div class="dash-card">
-        <div class="card-top">
-          <div class="card-icon-wrap"><i class="ri-hard-drive-2-fill"></i></div>
-          <span class="card-num">01</span>
-        </div>
-        <p class="card-name">Installation & configuration</p>
-        <p class="card-desc">Mise en place du GLPI, configuration initiale et paramétrage de la base de données.</p>
-      </div>
-      <div class="dash-card">
-        <div class="card-top">
-          <div class="card-icon-wrap"><i class="ri-ticket-2-fill"></i></div>
-          <span class="card-num">02</span>
-        </div>
-        <p class="card-name">Gestion des tickets</p>
-        <p class="card-desc">Création, suivi et résolution des incidents informatiques.</p>
-      </div>
-      <div class="dash-card">
-        <div class="card-top">
-          <div class="card-icon-wrap"><i class="ri-mac-line"></i></div>
-          <span class="card-num">03</span>
-        </div>
-        <p class="card-name">Gestion du parc</p>
-        <p class="card-desc">Inventaire complet du matériel et des logiciels de l'entreprise.</p>
-      </div>
-      <div class="dash-card">
-        <div class="card-top">
-          <div class="card-icon-wrap"><i class="ri-radar-line"></i></div>
-          <span class="card-num">04</span>
-        </div>
-        <p class="card-name">Glpi Inventory</p>
-        <p class="card-desc">Collecte automatique des données matérielles et logicielles via un agent déployé sur chaque machine du parc.</p>
-      </div>
-    </div>
-  </div>
-</section>
   <!-- CONTACT -->
   <section id="contact" class="contact-section">
     <div class="container">
@@ -409,11 +436,11 @@
           <div class="contact-info fade-in-left">
             <div class="info-section">
               <h3><i class="ri-phone-line"></i> Téléphone</h3>
-              <p>+230 5935 3663</p>
+              <p>07 66 63 75 83</p>
             </div>
             <div class="info-section">
               <h3><i class="ri-mail-send-line"></i> Mail</h3>
-              <p><a href="mailto:franckydev@gmail.com">franckymarcel06@gmail.com</a></p>
+              <p><a href="mailto:franckydev@gmail.com">rafalifrancky03@gmail.com</a></p>
             </div>
             <div class="info-section">
               <h3><i class="ri-github-fill"></i> GitHub</h3>
